@@ -1,0 +1,104 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2d656d;
+}
+
+/* Header and Navigation Menu */
+.minimenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.minimenu ul li {
+    float: left;
+}
+
+.minimenu ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.minimenu ul li a:hover {
+    background-color: #2d656d;
+    color: black;
+}
+
+/* Clearfix for Floating Elements */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Homepage Details Styling */
+.Homepage_detail {
+    padding: 20px;
+    background-color :rgba(20, 66, 66, 0.2); 
+    margin-top: 10px;
+}
+
+.Homepage_detail h3 {
+    color: #ecdada;
+    font-size: 30px;
+}
+
+.Homepage_detail p {
+    line-height: 1.6;
+}
+
+/* Profile Image Styling */
+.profile_image {
+    float: left;
+    margin: 10px;
+}
+
+.profile_image img {
+    width: 300px; /* Adjust based on preference */
+    height: auto;
+    border-radius: 10%; /* Circular Image */
+    border: 2px solid #333;
+    border-style: solid none solid none;
+}
+
+/* Button Styling */
+.pdf_file button {
+    background-color: #4caf50; /* Green */
+    color: white;
+    padding: 10px 24px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer; 
+    
+}
+
+.pdf_file button:hover {
+    background-color: #45a049;
+    box-shadow: 0 12px 16px 0 rgba(1, 161, 36, 0.986),0 17px 50px 0 rgba(1, 161, 36, 0.986);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .minimenu ul li, .profile_image, .Homepage_detail {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .profile_image img {
+        margin: auto;
+    }
+}
+.detail_main {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+

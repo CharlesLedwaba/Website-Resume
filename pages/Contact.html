@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="../styling/Other_Main.css">
+    <link rel="stylesheet" href="../styling/Contact_Styling.css">
+    <script src="https://kit.fontawesome.com/25810636c8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="SectionMain" class="clearfix">
+        <div class="minimenu">
+            <ul>
+                <li><a href="Homepage.html">
+                    <i class="fa-solid fa-house-user"></i> Home</a>
+                </li>
+                <li><a href="Projects.html">
+                    <i class="fa-solid fa-list-check"></i>Projects</a>
+                </li>
+                <li><a href="Contact.html">
+                    <i class="fa-regular fa-address-card"></i>Contact</a>
+                </li>  
+                <li>  <a href="https://www.linkedin.com/in/charles-ledwaba-33040312a">
+                    <i class="fa-brands fa-linkedin fa-bounce"></i> LinkedIn</a>
+                </li>   
+            </ul>
+            
+        </div>
+        <div class="contactForm">
+        <form action="https://formspree.io/f/xrbzgdkg" method="POST">
+        <h1>Contact Me</h1>
+        <input type="text" name="first" placeholder="First Name" required>
+        <input type="text" name="last" placeholder="Last Name" required>
+        <input type="text" name="company" placeholder="company Name (Optional)">
+        <input type="email" name="email" placeholder="Email Address" required>
+        <textarea rows="5" cols="60" name="message" placeholder="Enter Text" required></textarea>
+        <button type="submit">Send Message</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
