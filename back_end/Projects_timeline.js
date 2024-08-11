@@ -5,7 +5,6 @@
     var items = document.querySelectorAll(".timeline li");
   
     // check if an element is in viewport
-    // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
     function isElementInViewport(el) {
       var rect = el.getBoundingClientRect();
       return (
