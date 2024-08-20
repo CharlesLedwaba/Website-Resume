@@ -24,3 +24,27 @@ gradeBtn.addEventListener('click', function() {
 transcriptBtn.addEventListener('click', function() {
     window.location.href = '../img/Resume.pdf';
 });
+
+//dark mode backend
+// Get the toggle button
+const toggle = document.getElementById("slider round");
+
+// Add an event listener to the toggle button
+toggle.addEventListener("click", () => {
+   lightMode();
+});
+function darkMode() {
+    let element = document.body;
+    let content = document.getElementById("DarkModetext");
+    element.className = "dark-mode";
+    content.innerText = "Dark Mode is ON";
+}
+
+// Call the darkMode() function
+darkMode();
+function lightMode() {
+    let element = document.body;
+    let content = document.getElementById("lightModetext");
+    element.className = "light-mode";
+    content.innerText = "Dark Mode is OFF";
+}

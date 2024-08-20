@@ -145,7 +145,7 @@ body {
     display: inline-block;
     width: 60px;
     height: 34px;
-  }
+  }*/
   
   /* Hide default HTML checkbox */
   .switch input {
@@ -169,9 +169,7 @@ body {
     }
 }
 
-
-
-  /* The slider */
+  /*** outer slider circle ***/ 
   .slider {
     
     position: absolute;
@@ -184,7 +182,7 @@ body {
     -webkit-transition: .4s;
     transition: .4s;
   }
-  
+ /*** inner slider circle ***/ 
   .slider:before {
     position: absolute;
     content: "";
@@ -192,7 +190,7 @@ body {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -200,10 +198,10 @@ body {
   input:checked + .slider {
     background-color: #2196F3;
   }
-  /*
+  
   input:focus + .slider {
     box-shadow: 0 0 1px #2196F3;
-  }*/
+  }
   /* The slider which is the round object inside the switch */
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);
@@ -219,3 +217,14 @@ body {
   .slider.round:before {
     border-radius: 50%;
   }
+
+  .dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
