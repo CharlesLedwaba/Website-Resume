@@ -68,15 +68,22 @@ body {
 
 /* Profile Image Styling */
 .profile_image {
-    padding: 20px;
+    padding: 0px;
     background-color: var(--main-color);
-  
+    border-radius: 50%;
+    border: #5ef705 inset 20px;
+    filter:drop-shadow(8px 8px 50px #5ef705);
+    float: right;
+
 }
 
+.profile_image :hover {
+    animation: mymove 5s infinite; 
+}
 
 .profile_image img {
-    border: #5ef705 inset 20px;
     float: right;
+    
     margin: 0 0 0 2px;
     border-radius: 50%;
     width: 300px;
@@ -91,11 +98,7 @@ body {
     100% {transform: perspective(500px) rotateY(720deg);}
   
   }
-.profile_image img:hover {
-    border: #5ef705 inset 20px;
-    filter:drop-shadow(8px 8px 50px #5ef705);
-    animation: mymove 5s infinite; 
-}
+
 
 /* Button Styling */
 .pdf_file button {
