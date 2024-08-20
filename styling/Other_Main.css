@@ -74,16 +74,14 @@ body {
     border: #5ef705 inset 20px;
     filter:drop-shadow(8px 8px 50px #5ef705);
     float: right;
-
+    
 }
 
-.profile_image :hover {
-    animation: mymove 5s infinite; 
-}
+
 
 .profile_image img {
     float: right;
-    
+    animation: mymove 5s infinite; 
     margin: 0 0 0 2px;
     border-radius: 50%;
     width: 300px;
