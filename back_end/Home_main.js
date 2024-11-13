@@ -27,6 +27,24 @@ transcriptBtn.addEventListener('click', function() {
 
 //dark mode backend
 // Get the toggle button
+
+
+const toggle = document.getElementById("slider round");
+
+// Add an event listener to the toggle button
+toggle.addEventListener("click", () => {
+   lightMode();
+});
+
+function lightMode(){
+    var element = document.body;
+    element.classList.toggle("light-mode");
+
+};
+
+
+
+/*
 const toggle = document.getElementById("slider round");
 
 // Add an event listener to the toggle button
@@ -47,4 +65,4 @@ function lightMode() {
     let content = document.getElementById("lightModetext");
     element.className = "light-mode";
     content.innerText = "Dark Mode is OFF";
-}
+}*/
